@@ -1,0 +1,211 @@
+/* ������ */
+#aboutUS_container {
+    z-index: 5;
+    background: #F3F2F0;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    display: block;
+}
+
+#aboutUS_container #main {
+    /* margin-top: -105px; */
+    display: block;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.8;
+    position: absolute;
+}
+
+#opacity_mask {
+    z-index: 2;
+    position: absolute;
+    top: 5vh;
+    width: 50vw;
+    height: 80vh;
+    background: #F3F2F0;
+    left: 7%;
+    border-radius: 5%;
+
+    opacity: 0;
+    /* 銝�����镼踵�仃 */
+    -webkit-animation: fadeIn ease-in 0.8;
+    /* ����� fadeIn ��� keyframe, 雿輻 ease-in �����蒂銝���銵�甈� */
+    -moz-animation: fadeIn ease-in 0.8;
+    animation: fadeIn ease-in 0.8;
+
+    -webkit-animation-fill-mode: forwards;
+    /* 蝣箔���摰����������敺�� keyframe �� (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+#mask_word{
+    z-index: 3;
+    position: absolute;
+    top: 5vh;
+    width: 50vw;
+    height: 80vh;
+    left: 7%;
+    border-radius: 5%;
+
+    opacity: 0;
+    /* 銝�����镼踵�仃 */
+    -webkit-animation: fadeIn ease-in 1;
+    /* ����� fadeIn ��� keyframe, 雿輻 ease-in �����蒂銝���銵�甈� */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode: forwards;
+    /* 蝣箔���摰����������敺�� keyframe �� (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+/* 獢���摰� */
+#text{
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    font-size: 36px;
+    color: #000000;
+    font-weight:bold;
+}
+#text1{
+    position: absolute;
+    left: 70px;
+    top: 90px;
+    font-size: 24px;
+    color: #000000;
+    width: 630px;
+    height: 200px;
+}
+#word{
+    position: absolute;
+    left: 40px;
+    top: 300px;
+    font-size: 36px;
+    color: #000000;
+    font-weight:bold;
+}
+#group1 img{
+    position: absolute;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    left: 90px;
+    top: 350px;
+    opacity: 2;
+}
+#group2 img{
+    position: absolute;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    left: 300px;
+    top: 350px;
+    opacity: 2;
+}
+#group3 img{
+    position: absolute;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    left: 510px;
+    top: 350px;
+    opacity: 2;
+}
+#word1{
+    position: absolute;
+    left: 70px;
+    top: 500px;
+    font-size: 22px;
+    color: #000000;
+    width: 640px;
+    height: 40px;
+}
+/* �������� */
+.iot {
+    z-index: 2;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+    opacity: 0;
+    /* 銝�����镼踵�仃 */
+    -webkit-animation: fadeIn ease-in 1;
+    /* ����� fadeIn ��� keyframe, 雿輻 ease-in �����蒂銝���銵�甈� */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode: forwards;
+    /* 蝣箔���摰����������敺�� keyframe �� (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+#cloud {
+    top: 5vh;
+    right: 22%;
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+#phone {
+    top: 31vh;
+    right: 12%;
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+#wash {
+    top: 57vh;
+    right: 22%;
+    -webkit-animation-delay: 1.6s;
+    -moz-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

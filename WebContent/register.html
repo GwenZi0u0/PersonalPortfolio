@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/logIn.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>註冊頁面</title>
+</head>
+
+<body>
+
+    <div class="top" id="top">
+
+        <div class="link">
+
+            <a class="index" id="index" href="index.html"><img src="media/toindex.png"></a>
+            <a class="top_a" href="product.html">
+                <div class=mid_div>產品分類</div>
+            </a>
+            <a class="top_a" href="compare.html">
+                <div class="mid_div">產品比較</div>
+            </a>
+            <a class="top_a" href="logIn.html">
+                <div class="mid_div">會員中心</div>
+            </a>
+            <a class="top_a" href="about.html">
+                <div class="mid_div">關於我們</div>
+            </a>
+            <form class="form-inline" action="query.html">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q">
+                <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <a class="login" href="logIn.html">
+                <img src="media/logIn.png">
+            </a>
+
+        </div>
+
+    </div>
+    <!-- <div id="allad">
+        <img src="media/AD.png" alt="">
+    </div> -->
+    <div id=lab>新會員註冊</div>
+
+    <div id="form_div">
+        <form method="post">
+            <div class="form_container">
+                <label for="Account"><b>帳號</b></label>
+                <input type="text" name="Account" required>
+                <br>
+                <label for="Password"><b>密碼</b></label>
+                <input type="password" name="Password" required>
+                <button type="submit" name="LoginButton" id="btn">註冊</button>
+            </div>
+        </form>
+        <a href="logIn.html">
+            <div id="gotoRegister" class="goto">登入請按</div>
+            <img src="media/AD.png" alt="">
+        </a>
+
+        <!-- <div class="forget">忘記密碼</div> -->
+    </div>
+</body>
+
+</html>

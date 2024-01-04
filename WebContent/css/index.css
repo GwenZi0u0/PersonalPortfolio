@@ -1,0 +1,122 @@
+/* 輪波圖 */
+.flexslider {
+    position: relative;
+    top: 16vh;
+    left: 5vw;
+    width: 900px;
+}
+
+.flexslider img {
+    width: 900px;
+    height: 480px;
+}
+
+#rank {
+    position: absolute;
+    width: 25vw;
+    height: 69vh;
+    right: 16vh;
+    top: 17vh;
+    background-color: rgb(216, 216, 216);
+
+}
+
+#top3 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    margin: 1%;
+    background-color: rgb(43, 194, 136);
+}
+
+#rank span {
+    display: flex;
+}
+
+.rankObj {
+    font-weight: bold;
+    font-size: 18px;
+    width: 98%;
+    margin: 1%;
+    height: calc((64vh - 10vh) / 3);
+    background-color: #ffffff;
+
+}
+
+/* 
+.likeNum {
+    line-height: calc((64vh - 10vh) / 3);
+} */
+
+.likeName {
+
+    width: 10vw;
+}
+
+.rankObj label {
+    margin-top: 3vh;
+    width: 15vw;
+    height: 100%;
+
+}
+
+
+
+.rankObj:hover {
+    cursor: pointer;
+}
+
+.rankObj label:hover {
+    cursor: pointer;
+}
+
+.rankObj img {
+
+    margin: 5%;
+    width: 100px;
+    height: 100px;
+    z-index: 5;
+}
+
+/* 中線 */
+#separate {
+    position: relative;
+    width: 85vw;
+    left: 7.5vw;
+    height: 3px;
+    z-index: 1;
+    top: 18vh;
+    background-color: #7c7c7c;
+}
+
+/* 商品區 */
+#tabcontent {
+    z-index: 1;
+    position: relative;
+    top: 20vh;
+}
+
+.list {
+    position: fixed;
+    /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
+    top: 87%;
+    /*設置垂直位置*/
+    right: 0%;
+    /*設置水平位置，依所放的內容多寡需要自行手動調整*/
+    padding: 10px 15px;
+    border-radius: 10px;
+    /*圓角*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.list img {
+    width: 75px;
+    height: 75px;
+}
+
+.goodsarea {
+    width: 90%;
+    left: 5%;
+}

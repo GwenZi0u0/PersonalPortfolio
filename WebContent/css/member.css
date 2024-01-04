@@ -1,0 +1,81 @@
+/* 會員登入專區 */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* 登入(出)框 */
+#lab {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 15%;
+    font-size: 42px;
+}
+
+body {
+
+    width: auto;
+    height: auto;
+    background-color: #ddf7e4;
+    background-image: url("../media/background2.png");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#form_div form {
+    border: 3px solid #ffffff;
+    background-color: #fff;
+    width: 40%;
+    left: 30%;
+    position: relative;
+    top: 25vh;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+#form_div form input[type=text],
+#form_div form input[type=password] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(10, 10, 10);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.goto {
+    text-align: center;
+    position: absolute;
+    border-radius: 10px;
+    color: rgb(38, 91, 190);
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    height: 6%;
+    left: 55.1%;
+    top: 75%;
+    font-size: 18px;
+}
+
+#form_div img {
+    position: absolute;
+    left: 52%;
+    top: 35%;
+    width: 16%;
+    height: 35%;
+}
+
+.form_container {
+    padding: 16px;
+    width: 50%;
+    top: 0;
+}
+
+.form_container label {
+    font-size: 18px;
+}

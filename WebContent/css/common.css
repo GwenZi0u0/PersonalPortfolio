@@ -1,0 +1,293 @@
+/* 所有版的樣貌 */
+* {
+    font-family: "微軟正黑體";
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+
+    width: auto;
+    height: auto;
+    background-color: #ddf7e4;
+    background-image: url("../media/background.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* top */
+.link form {
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    width: 20%;
+}
+
+.link {
+    position: relative;
+    height: 80px;
+    background-color: #fafafa;
+
+}
+
+.mid_div {
+    font-weight: bold;
+    top: 50%;
+    position: relative;
+}
+
+.top {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.top_a {
+    height: 80px;
+    top: -25px;
+    left: 26%;
+}
+
+.link img {
+    width: 210px;
+    height: 80px;
+}
+
+.link a {
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    width: 8%;
+}
+
+.top_a:hover {
+    background-color: rgb(221, 221, 221);
+    opacity: 0.7;
+}
+
+.index {
+    position: absolute;
+    left: 10px;
+    top: 2px;
+}
+
+.login img {
+    right: 0;
+    width: 62px;
+    height: 62px;
+}
+
+.login {
+    right: -50%;
+    position: absolute;
+}
+
+.list {
+    cursor: pointer;
+    z-index: 10;
+}
+
+.top_a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.top_a {
+    color: #000;
+    text-decoration: none;
+}
+
+* a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* top */
+
+/* 物品 */
+.goodsphoto {
+    margin: 10px;
+    background-color: rgb(243, 236, 226);
+}
+
+.goodsphoto img {
+    width: 140px;
+    height: 150px;
+}
+
+.goods {
+    text-align: center;
+    width: 20%;
+    min-width: 180px;
+    max-width: 20%;
+    min-height: 42vh;
+    max-height: 42vh;
+    border-radius: 10px;
+    background-color: #f1e8d9;
+    margin: 1% 1%;
+    color: #714E3d;
+}
+
+.goodsintroduce {
+    font-weight: bold;
+    text-align: left;
+    width: 80%;
+    margin: 10px;
+    /* overflow: hidden; */
+    height: 40%;
+    position: relative;
+}
+
+.itemName :hover {
+    cursor: pointer;
+}
+
+.goodsarea {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    top: 17%;
+    display: flex;
+    height: auto;
+    /* position: absolute;
+    left:4.2%; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    padding-left: 10%;
+    min-height: calc(100vh - 200px);
+}
+
+.price {
+    position: absolute;
+    bottom: 0;
+    color: #000;
+}
+
+
+.heart {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: #aaa;
+    transform: rotate(45deg);
+    box-shadow: 30px 30px 200px rgba(0, 0, 0, 0.5);
+}
+
+.heart:hover {
+    cursor: pointer;
+}
+
+.heart:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    width: 20px;
+    height: 20px;
+    background: #aaa;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.heart:after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    width: 20px;
+    height: 20px;
+    background: #aaa;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.isLiked {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: #e80202;
+    transform: rotate(45deg);
+    box-shadow: 30px 30px 200px rgba(0, 0, 0, 0.5);
+}
+
+.isLiked:hover {
+    cursor: pointer;
+}
+
+.isLiked:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    width: 20px;
+    height: 20px;
+    background: #e80202;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.isLiked:after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    width: 20px;
+    height: 20px;
+    background: #e80202;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+/* 物品 */
+
+
+.fakeframe {
+    min-height: calc(100vh - 100px);
+    position: relative;
+}
+
+/* 回頂部 */
+#gototop {
+    position: fixed;
+    top: 75%;
+    z-index: 20;
+    right: 0%;
+    padding: 10px 17px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+#gototop img {
+    width: 80px;
+    height: 65px;
+}
+
+.list img {
+    width: 75px;
+    height: 75px;
+}
+
+.list {
+    cursor: pointer;
+    z-index: 10;
+}
+
+.list {
+    position: fixed;
+    top: 87%;
+    right: 0%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}

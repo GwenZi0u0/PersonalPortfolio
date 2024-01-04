@@ -1,0 +1,71 @@
+/* 產品分類頁 */
+* {
+    scroll-behavior: smooth;
+}
+
+.index {
+    position: absolute;
+
+    /* left: 1%; */
+}
+
+#tabcontent {
+    z-index: 1;
+    position: relative;
+    top: 15vh;
+}
+
+.list {
+    position: fixed;
+    /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
+    top: 87%;
+    /*設置垂直位置*/
+    right: 0%;
+    /*設置水平位置，依所放的內容多寡需要自行手動調整*/
+    padding: 10px 15px;
+    border-radius: 10px;
+    /*圓角*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.list img {
+    width: 75px;
+    height: 75px;
+}
+
+
+/* .cashier {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    width: 175px;
+    height: 175px;
+} */
+
+#introduce {
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+.nav_item {
+    margin: 0 7%;
+    /* border-left:1px solid rgb(59, 59, 59); */
+}
+
+/* .nav_item:first-child{
+    border:0;
+} */
+
+.nav_link {
+    color: #714E3d;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/*  */
+.inputnumber {
+    width: 50px;
+}

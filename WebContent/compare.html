@@ -1,0 +1,84 @@
+<!-- 產品比較頁 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>產品比較</title>
+
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/compare.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+    <script src="js/common.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+</head>
+
+<body>
+    <!-- 回到頂部 -->
+    <div id="link_top"></div>
+    <div class="top" id="top">
+        <div class="link">
+
+            <a class="index" id="index" href="index.html"><img src="media/toindex.png"></a>
+            <a class="top_a" href="product.html">
+                <div class=mid_div>產品分類</div>
+            </a>
+            <a class="top_a" href="compare.html">
+                <div class="mid_div">產品比較</div>
+            </a>
+            <a class="top_a" href="logIn.html">
+                <div class="mid_div">會員中心</div>
+            </a>
+            <a class="top_a" href="about.html">
+                <div class="mid_div">關於我們</div>
+            </a>
+
+            <form class="form-inline" action="query.html">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q">
+                <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <a class="login" href="logIn.html">
+                <img src="media/logIn.png">
+            </a>
+        </div>
+    </div>
+
+    <div id=compareArea>
+        <div id=item1>
+            <select id="select1" class="compareItem" onchange="select1()"></select>
+
+        </div>
+        <div id=item2>
+            <select id="select2" class="compareItem" onchange="select2()"></select>
+
+        </div>
+
+        <div class=imgBox id=imgBox1></div>
+        <div class=text id=text1></div>
+        <div class="textMask" id=mask1></div>
+        <div id=vs>vs</div>
+        <div class=imgBox id=imgBox2></div>
+        <div class=text id=text2></div>
+        <div class="textMask" id=mask2></div>
+
+    </div>
+    <div id="list" class="list" onclick="direct()">
+        <img src="media/like.png">
+    </div>
+    <!-- 回到頂部 -->
+    <a href="#link_top" id="gototop">
+        <img src="media/top.png" alt="">
+    </a>
+    </div>
+</body>
+<script src="js/data.js"></script>
+<script src="js/compare.js"></script>
+
+</html>
