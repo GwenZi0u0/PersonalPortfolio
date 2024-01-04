@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>36 Hour Weather Forecast</title>
+    <link rel="stylesheet" href="./css/weather.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Weather Forecast</h1>
+    </nav>
+    <div class="banner">
+        <!-- 自動播放 影片靜音 重複播放 -->
+        <video autoplay loop muted>
+            <source src="./stylesheet/WeatherInformation.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <div class="contain">
+                <!-- 縣市標籤 -->
+                <div class="countyAndCityTabs"></div>
+                <!-- 區域標籤 -->
+                <div class="areaTabs"></div>
+            </div>
+            <!-- 地圖 -->
+            <div class="mapAll" id="map"></div>
+            <!-- 縣市小卡 -->
+            <div class="cardAll" style="display: none;"></div>
+            <!-- 區域小卡 -->
+            <div class="rollcardAll"></div>
+        </div>
+    </div>
+    <!-- 台灣地圖 -->
+    <script src="./JS/map.js"></script>
+    <!-- locationList & areas & 導入API資料-->
+    <script src="./JS/mapping.js"></script>
+    <script src="./JS/interactive.js"></script>
+</body>
+
+</html>

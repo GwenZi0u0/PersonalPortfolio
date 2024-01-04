@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    background-color: #d7e5ca;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav {
+    background-color: #f9f3cc;
+    width: 366px;
+    height: 100%;
+    flex: 0.5;
+    box-shadow: 4px 0 10px gray;
+}
+
+#logo {
+    flex: 2;
+    margin-left: calc((100% - 150px) /2);
+}
+
+.logo:hover {
+    box-shadow: 0px 0px 10px #ee8d8c;
+    transform: translate(1px, 1px);
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: calc(50% - 50px);
+}
+
+.btn {
+    width: 150px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.btnA:hover {
+    box-shadow: 1px 1px 5px gray;
+    transform: translate(-2px, -2px);
+}
+
+.btnA {
+    background-color: #d0d4ca;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContainer {
+    width: 957px;
+    height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: calc((100% - 10px * 2) / 3);
+    height: 100%;
+    position: relative;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    transition: transform 0.25s ease-in-out;
+    position: absolute;
+}
+
+.content:hover .front {
+    transform: rotateY(180deg);
+}
+
+.front {
+    -webkit-filter: brightness(0.9);
+    transform: rotateY(0deg);
+}
+
+
+.content:hover .back {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(-180deg);
+}
+
+#x {
+    margin-right: 10px;
+}
+
+#y {
+    margin-right: 10px;
+}
+
+
+
+@media screen and (max-width:499.9px) {
+    .nav {
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        z-index: 9;
+    }
+
+    .hamMenu:hover {
+        cursor: pointer;
+    }
+
+    .hamMenu {
+        width: 45px;
+        height: 55px;
+        background-color: #99b08b;
+        display: block;
+        position: absolute;
+        margin-top: 12.5px;
+        margin-left: 18.5px;
+        border-radius: 10px;
+    }
+
+    .hamMenu .line {
+        background-color: black;
+        width: 90%;
+        height: 10%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 40%;
+        transition: 0.5s;
+    }
+
+    .hamMenu .line1 {
+        top: 25%;
+    }
+
+    .hamMenu .line2 {
+        top: 50%;
+    }
+
+    .hamMenu .line3 {
+        top: 75%;
+    }
+
+    #hamMenuSwitch:checked+.hamMenu .line1 {
+        transform: translate(-50%, -50%) rotate(45deg);
+        background-color: black;
+        top: 50%;
+
+    }
+
+    #hamMenuSwitch:checked+.hamMenu .line2 {
+        display: none;
+    }
+
+    #hamMenuSwitch:checked+.hamMenu .line3 {
+        transform: translate(-50%, -50%) rotate(-45deg);
+        background-color: black;
+        top: 50%;
+    }
+
+    #hamMenuSwitch:checked~.btn {
+        display: block;
+    }
+
+    #logo {
+        margin-left: calc((100% - 60px) / 2);
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    .btn {
+        width: 80%;
+        display: none;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #99b08bc4;
+        margin-top: 5px;
+        margin-left: 18.5px;
+        border-radius: 20px;
+        z-index: 2;
+    }
+
+    .btnA {
+        background-color: #d0d4ca;
+        font-size: 18px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 10px;
+        flex-direction: column;
+    }
+
+    .container {
+        margin: 0;
+        padding-top: 80px;
+    }
+
+    .cardContainer {
+        width: 370px;
+        height: calc(100vh - 80px);
+        flex-wrap: wrap;
+    }
+
+    .content {
+        width: 100%;
+        height: calc((100vh - 80px) / 3);
+        position: relative;
+    }
+
+    .front,
+    .back {
+        border-radius: 8px;
+    }
+
+    #x {
+        margin-right: 0;
+    }
+
+    #y {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:1280px) and (min-width:769px) {
+    .cardContainer {
+        width: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    #x {
+        width: 100%;
+        height: calc((100% - 10px) / 2);
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    #y {
+        width: calc(50% - 5px);
+        height: 50%;
+    }
+
+    #z {
+        width: calc(50% - 5px);
+        height: 50%;
+    }
+}
+
+@media screen and (max-width:1000px) and (min-width:500px) {
+    .nav {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        display: flex;
+        z-index: 9;
+    }
+
+    #logo {
+        margin-left: 40px;
+    }
+
+    .logo {
+        width: 85px;
+        height: 85px;
+        margin-top: 8px;
+    }
+
+    .btn {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+
+    .btnA {
+        width: calc(100% / 3);
+        font-size: 20px;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+
+    .container {
+        padding: 150px 0 70px;
+        margin: 0;
+    }
+
+    .cardContainer {
+        width: 95%;
+        height: calc(100vh - (150px + 70px));
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    #x {
+        width: 100%;
+        height: calc((100% - 10px) / 2);
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #y {
+        width: calc(50% - 5px);
+        height: 50%;
+    }
+
+    #z {
+        width: calc(50% - 5px);
+        height: 50%;
+    }
+}
+
+
+@media screen and (max-width:700px) and (min-width:500px) {
+    .btnA {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:610px) and (min-width:500px) {
+    .btnA {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:550px) and (min-width:500px) {
+    .btnA {
+        font-size: 13px;
+    }
+}
