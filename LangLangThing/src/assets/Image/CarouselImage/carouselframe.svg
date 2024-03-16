@@ -1,0 +1,13 @@
+<svg width="275" height="285" viewBox="0 0 275 285" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M85 29.0001C-48.2834 -46.0001 25.2185 104 25.2185 104M85 29.0001C-48.2834 -46.0001 25.2185 104 25.2185 104" stroke="#52A038" stroke-width="10"/>
+<path d="M190 29.0001C323.283 -46.0001 249.781 104 249.781 104M190 29.0001C323.283 -46.0001 249.781 104 249.781 104" stroke="#52A038" stroke-width="10"/>
+<path d="M256 136.5C256 203.716 202.833 258 137.5 258C72.1667 258 19 203.716 19 136.5C19 69.2836 72.1667 15 137.5 15C202.833 15 256 69.2836 256 136.5Z" fill="url(#pattern0)" stroke="#52A038" stroke-width="10"/>
+<path d="M262.5 138C262.5 208.462 206.49 265.5 137.5 265.5C68.5099 265.5 12.5 208.462 12.5 138C12.5 67.5377 68.5099 10.5 137.5 10.5C206.49 10.5 262.5 67.5377 262.5 138Z" stroke="white" stroke-width="5"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_289_1146" transform="matrix(0.00141044 0 0 0.00137699 0 -0.151315)"/>
+</pattern>
+
+
+</defs>
+</svg>
